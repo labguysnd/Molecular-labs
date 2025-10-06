@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MolecularLabs.tech — Advanced Molecular Solutions</title>
-  <!-- Modern, clean fonts similar to labs/research sites -->
+  <title>Sound Stem Generator | MolecularLabs.tech</title>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,10 +15,10 @@
     <div class="container header-container">
       <div class="logo">MolecularLabs.tech</div>
       <nav class="nav-menu" aria-label="Primary Navigation">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Products</a>
-        <a href="#">Research</a>
+        <a href="#">Home</a>
+        <a href="#">API</a>
+        <a href="#">Features</a>
+        <a href="#">Onboarding</a>
         <a href="#">Contact</a>
       </nav>
     </div>
@@ -24,21 +26,41 @@
 
   <main class="container main-content">
     <section class="hero">
-      <h1>Precision Molecular Solutions</h1>
-      <p class="hero-subheading">Delivering advanced assay panels, optimized workflows, and collaborative R&D for next-generation laboratories.</p>
+      <h1>Sound Stem Generator</h1>
+      <p class="hero-subheading">Create Perfect Stems On Demand through a scalable API. Generate studio-ready music stems tailored to any track, genre, tempo, and arrangement with fast, highly configurable, and royalty-conscious outputs.</p>
     </section>
 
-    <section class="features">
-      <h2>Why Choose MolecularLabs.tech?</h2>
+    <section class="section-content">
+      <h2>Why It Should Exist</h2>
+      <p>This platform delivers on-demand stems for professionals who demand repeatable, auditable results and, crucially, a programmable interface. Each stem set is fully configurable by genre, tempo, key, arrangement, and instrument palette, with instrument- and effect-level granularity, all exposed through REST or GraphQL endpoints. The workflow is transparent and reproducible via versioned API calls, with inputs, parameters, and export formats traceable in an auditable trail. Licensing and usage terms are explicit, featuring royalty-conscious options suitable for integration into enterprise pipelines. The system is designed for robustness in studio workflows, film and game scoring, education, and cross-industry applications where reproducibility, governance, and observability matter. Pricing, access controls, and analytics are integrated to support multi-tenant deployments, auditing, and scalable operations.</p>
+    </section>
+
+    <section class="section-content">
+      <h2>Simple Steps</h2>
+      <p>Begin with a developer-friendly onboarding: sign up for API access, obtain your API key, and explore the sandbox environment. A micro-demo demonstrates generating a single stem set for a sample project, exposing the exact request payload, the deterministic rendering path, and the resulting metadata. Progress to a mini-workflow in the sandbox by adjusting a couple of parameters (genre and key), resubmitting, and comparing the before/after outputs to understand how parameterization affects tone and texture. Move to a live audition experience via the API: request per-stem previews and per-channel processing data, tune multi-stem routing and effects through additional parameters, and perform a final export to WAV, MP3, or FLAC with embedded metadata and provenance. The onboarding emphasises a four-step flow—parameterisation, deterministic rendering, post-generation verification, and asset retrieval—through interactive requests, immediate feedback, and a clear audit trail.</p>
+    </section>
+
+    <section class="section-content">
+      <h2>Features</h2>
       <ul>
-        <li>Comprehensive, cost-effective assay panels for research and diagnostics</li>
-        <li>Direct access to our agile product development and support teams</li>
-        <li>Robust, contamination-minimized lab protocols and infrastructure</li>
+        <li>Customizable Stem Sets with instrument-level EQ, compression, and routing options accessible via API endpoints</li>
+        <li>Genre Profiles from pop and hip-hop to electronic, rock, classical, and film scoring with dynamic templates</li>
+        <li>Key & Tempo Lock to keep stems tightly aligned with project keys and tempos</li>
+        <li>Advanced Mixing Presets offering vocal clarity, analog warmth, and stem-level loudness normalization</li>
+        <li>File Formats & Deliverables including WAV, MP3, FLAC with embedded metadata and ISRC-aware tagging</li>
+        <li>Collaboration features with project sharing, access controls, and versioning</li>
+        <li>Licensing & Credits supporting explicit usage terms, royalty tracking, and attribution</li>
+        <li>Webhook notifications for job status updates enabling CI/CD integration</li>
       </ul>
     </section>
 
+    <section class="section-content">
+      <h2>Onboarding</h2>
+      <p>Learning by Doing is embedded as a developer-centric onboarding flow that translates curiosity into capability. It begins with a micro-demo in the sandbox that generates a single stem set for a sample project, explicitly revealing the request payload, the deterministic rendering path, and the resulting metadata. The path advances to a mini-workflow in which parameters such as genre and key are adjusted, the request is resubmitted, and outputs are compared to illustrate how parameterization shapes tone and texture. The onboarding then introduces a live audition experience through API responses delivering per-stem previews, per-channel processing data, and iterative tweaks propagating through to a final export. Lightweight explanations, glossaries, and a guided checklist enable users to build confidence producing professional-grade stems via the API.</p>
+    </section>
+
     <section class="call-to-action">
-      <button class="btn-primary">Explore Our Panels</button>
+      <button class="btn-primary">Get Started with the API</button>
     </section>
   </main>
 
@@ -49,6 +71,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
