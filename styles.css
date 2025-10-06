@@ -4,6 +4,7 @@
   --color-primary: #3366cc;
   --color-primary-hover: #254b8b;
 
+  /* Playfair Display for all text */
   --font-primary: 'Playfair Display', serif;
   --font-accent: 'Playfair Display', serif;
 }
@@ -16,7 +17,7 @@ body {
   margin: 0;
   font-family: var(--font-primary);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7; /* slightly more for readability */
   color: var(--color-text);
   background-color: var(--color-bg);
 }
@@ -41,7 +42,7 @@ body {
 
 .logo {
   font-family: var(--font-accent);
-  font-weight: 700;
+  font-weight: 400; /* normal weight - no bold */
   font-size: 1.8rem;
   user-select: none;
   color: var(--color-text);
@@ -49,7 +50,7 @@ body {
 
 .nav-menu a {
   margin-left: 32px;
-  font-weight: 700;
+  font-weight: 400; /* normal weight */
   color: var(--color-text);
   text-decoration: none;
   transition: color 0.25s ease;
@@ -71,18 +72,13 @@ body {
   margin-bottom: 4rem;
 }
 
-.main-content p,
-.features {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 .hero h1 {
   font-family: var(--font-accent);
-  font-weight: 900;
+  font-weight: 400; /* normal */
   font-size: 3rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
+  text-align: center;
 }
 
 .hero-subheading {
@@ -91,39 +87,48 @@ body {
   font-size: 1.25rem;
   color: #444;
   max-width: 700px;
-  margin-top: 0;
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .section-content {
   margin-bottom: 2.5rem;
   max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.06rem;
+  color: #444;
+  line-height: 1.6;
 }
 
 .section-content h2 {
   font-family: var(--font-accent);
-  font-weight: 700;
+  font-weight: 400; /* No bold */
   font-size: 2rem;
   margin-bottom: 1rem;
   color: var(--color-text);
+  text-align: center;
+  line-height: 1.2;
 }
 
-.section-content p {
-  font-family: var(--font-primary);
-  font-size: 1.06rem;
-  color: #444;
-  line-height: 1.5;
+.features p {
   margin-bottom: 1rem;
 }
 
 .call-to-action {
   margin-top: 3rem;
   margin-bottom: 5rem;
+  text-align: center;
 }
 
 .btn-primary {
   font-family: var(--font-primary);
-  font-weight: 700;
+  font-weight: 400; /* normal */
   font-size: 1rem;
   padding: 14px 36px;
   color: #fff;
@@ -133,6 +138,7 @@ body {
   cursor: pointer;
   user-select: none;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .btn-primary:hover,
@@ -145,7 +151,7 @@ body {
   border-top: 1px solid #ddd;
   padding: 20px 0;
   font-family: var(--font-primary);
-  font-weight: 400;
+  font-weight: 400; /* normal */
   font-size: 0.9rem;
   color: #666;
   text-align: center;
@@ -189,4 +195,5 @@ body {
     font-size: 1.1rem;
   }
 }
+
 
