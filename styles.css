@@ -3,8 +3,10 @@
   --color-bg: #fff;
   --color-primary: #3366cc;
   --color-primary-hover: #254b8b;
-  --font-primary: 'Inter', sans-serif;
-  --font-accent: 'Chakra Petch', sans-serif;
+
+  /* Playfair Display for all text */
+  --font-primary: 'Playfair Display', serif;
+  --font-accent: 'Playfair Display', serif;
 }
 
 * {
@@ -40,15 +42,15 @@ body {
 
 .logo {
   font-family: var(--font-accent);
+  font-weight: 700;
   font-size: 1.8rem;
-  font-weight: 600;
   user-select: none;
   color: var(--color-text);
 }
 
 .nav-menu a {
   margin-left: 32px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text);
   text-decoration: none;
   transition: color 0.25s ease;
@@ -72,13 +74,15 @@ body {
 
 .hero h1 {
   font-family: var(--font-accent);
+  font-weight: 900;
   font-size: 3rem;
-  font-weight: 700;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
 
 .hero-subheading {
+  font-family: var(--font-primary);
+  font-weight: 400;
   font-size: 1.25rem;
   color: #444;
   max-width: 700px;
@@ -93,28 +97,29 @@ body {
 
 .section-content h2 {
   font-family: var(--font-accent);
+  font-weight: 700;
   font-size: 2rem;
-  font-weight: 600;
   margin-bottom: 1rem;
   color: var(--color-text);
 }
 
-.section-content p {
+.section-content p,
+.section-content ul {
+  font-family: var(--font-primary);
+  font-weight: 400;
   font-size: 1.06rem;
-  line-height: 1.5;
   color: #444;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
 .section-content ul {
   padding-left: 1.25rem;
   list-style-type: disc;
-  color: #444;
 }
 
 .section-content ul li {
   margin-bottom: 0.7rem;
-  line-height: 1.5;
 }
 
 .call-to-action {
@@ -124,7 +129,7 @@ body {
 
 .btn-primary {
   font-family: var(--font-primary);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1rem;
   padding: 14px 36px;
   color: #fff;
@@ -146,6 +151,7 @@ body {
   border-top: 1px solid #ddd;
   padding: 20px 0;
   font-family: var(--font-primary);
+  font-weight: 400;
   font-size: 0.9rem;
   color: #666;
   text-align: center;
@@ -189,5 +195,3 @@ body {
     font-size: 1.1rem;
   }
 }
-
-
