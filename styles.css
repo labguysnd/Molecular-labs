@@ -4,7 +4,6 @@
   --color-primary: #3366cc;
   --color-primary-hover: #254b8b;
 
-  /* Playfair Display for all text */
   --font-primary: 'Playfair Display', serif;
   --font-accent: 'Playfair Display', serif;
 }
@@ -72,6 +71,12 @@ body {
   margin-bottom: 4rem;
 }
 
+.main-content p,
+.features {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .hero h1 {
   font-family: var(--font-accent);
   font-weight: 900;
@@ -103,23 +108,12 @@ body {
   color: var(--color-text);
 }
 
-.section-content p,
-.section-content ul {
+.section-content p {
   font-family: var(--font-primary);
-  font-weight: 400;
   font-size: 1.06rem;
   color: #444;
   line-height: 1.5;
   margin-bottom: 1rem;
-}
-
-.section-content ul {
-  padding-left: 1.25rem;
-  list-style-type: disc;
-}
-
-.section-content ul li {
-  margin-bottom: 0.7rem;
 }
 
 .call-to-action {
@@ -195,3 +189,4 @@ body {
     font-size: 1.1rem;
   }
 }
+
